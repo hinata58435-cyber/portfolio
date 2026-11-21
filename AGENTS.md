@@ -30,3 +30,5 @@ use the editor.
 <!-- LOVABLE:END -->
 
 - The portfolio is a plain HTML/CSS/JS static site in public/portfolio (user requires no-build deployable files); "/" only redirects there.
+
+- Static portfolio screenshot images use absolute hosted asset URLs backed by asset pointers, so the HTML needs no build or JavaScript to render them.
