@@ -1,23 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+// The portfolio is a standalone static site in public/portfolio; "/" forwards to it.
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Portfolio — أحوّل الأفكار إلى تجارب رقمية" },
+      { name: "description", content: "معرض أعمال في تصميم وتطوير المواقع الإلكترونية." },
+      { property: "og:title", content: "Portfolio — أحوّل الأفكار إلى تجارب رقمية" },
+      { property: "og:description", content: "معرض أعمال في تصميم وتطوير المواقع الإلكترونية." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useEffect(() => {
+    window.location.replace("/portfolio/index.html");
+  }, []);
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="flex min-h-screen items-center justify-center bg-background">
+      <a href="/portfolio/index.html" className="text-foreground underline">Portfolio</a>
     </div>
   );
 }

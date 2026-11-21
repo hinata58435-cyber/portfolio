@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- The portfolio is a plain HTML/CSS/JS static site in public/portfolio (user requires no-build deployable files); "/" only redirects there.

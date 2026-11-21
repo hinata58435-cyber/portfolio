@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معي — Portfolio</title>
+<meta name="description" content="يسعدني التواصل معك بخصوص مشروعك القادم.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="logo">Portfolio<span>.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" data-page="index">الرئيسية</a>
+      <a href="projects.html" data-page="projects">المشاريع</a>
+      <a href="contact.html" data-page="contact">تواصل معي</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow reveal">تواصل</p>
+      <h1 class="page-head__title reveal">يسعدني التواصل معك</h1>
+      <p class="page-head__text reveal">سواء كانت لديك فكرة مشروع أو استفسار بسيط، اكتب لي وسأعود إليك قريباً.</p>
+    </div>
+  </section>
+  <section class="section section--tight">
+    <div class="container contact">
+      <aside class="contact__info reveal">
+        <h2>معلومات التواصل</h2>
+        <p>أفضل طريقة للوصول إليّ هي نموذج المراسلة أو صفحات أعمالي المنشورة.</p>
+        <a class="link-gold" href="projects.html">تصفّح المشاريع ←</a>
+      </aside>
+      <form class="form reveal" id="contactForm" novalidate>
+        <div class="field"><label for="name">الاسم</label><input id="name" name="name" type="text" autocomplete="name"><small class="error"></small></div>
+        <div class="field"><label for="email">البريد الإلكتروني</label><input id="email" name="email" type="email" autocomplete="email" dir="ltr"><small class="error"></small></div>
+        <div class="field field--full"><label for="subject">عنوان الرسالة</label><input id="subject" name="subject" type="text"><small class="error"></small></div>
+        <div class="field field--full"><label for="message">تفاصيل الرسالة</label><textarea id="message" name="message" rows="6"></textarea><small class="error"></small></div>
+        <div class="field--full form__foot">
+          <button type="submit" class="btn btn--green">إرسال</button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo">Portfolio<span>.</span></a>
+    <nav class="footer__links"><a href="index.html">الرئيسية</a><a href="projects.html">المشاريع</a><a href="contact.html">تواصل معي</a></nav>
+    <p class="footer__copy">© <span id="year">2026</span> Portfolio — جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
