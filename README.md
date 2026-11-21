@@ -1,14 +1,40 @@
-# Welcome to your Lovable project
+# Verdant Atelier Portfolio
+
+الفخامة العصرية – Modern Luxury
+
+ترشيحي الأول
+
+Noxon – Old Money Style 3D Portfolio · Built with Blink
+
+Estera - Architecture Studio Web Design Concept by Jahanvi Jasani on Dribbble
+
+Kim Kneipp Folio - Awwwards SOTD
+
+14
+
+ألوانه:
+
+أخضر داكن #243D35
+
+عاجي #F7F4ED
+
+ذهبي مطفأ #B99A69
+
+بيج #E5DCCB
+
+فحمي #252825
+
+مميزاته: راقٍ، هادئ، يعطي قيمة للمشاريع، ولا يبدو مزدحماً.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cf0d5b3b-7abe-4e02-9b3f-ff13dc1ac447).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +46,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
